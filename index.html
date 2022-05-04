@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <script> src="app.js"</script>
+    <title>ekstrshhaWeb</title>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__info">
+                <p class="app_name">PZA</p>
+                <p class="decsr_name">сервис по учету платежей контрагентам</p>
+            </div>
+        </div>
+    </header>
+    <div class="main" id="main">
+        <div class="container">
+            <p class="main_text">Перед началом работы авторизуйтесь или зарегистрируйтесь.</p>
+            <div class="reg__aut">
+                <div class="reg__aut__item">
+                    <p class="title">Авторизоваться</p>
+                </div>
+                <div class="reg__aut__item">
+                    <p class="title">Зарегистрироваться</p>
+                </div>
+            </div>
+            <div class="reg__aut">
+                <div class="reg__aut__item">
+
+                    <div class="container_form">
+                        <form class="form">
+                            <label for="femail">E-mail</label>
+                            <input type="text" id="email" name="email">
+                        </form>
+                        <form class="form" >
+                            <label for="fpass">Пароль</label>
+                            <input type="text" id="fpass" name="fpass">
+                        </form>
+                        
+                        <button class="button__send" onclick="location.href='payments.html'">Войти</button>
+
+                    </div>
+                </div>
+                <div class="reg__aut__item">
+                    <div class="container_form">
+                        <form class="form">
+                            <label for="fname">Имя пользователя</label>
+                            <input type="text" id="fname" name="fname">
+                        </form>
+                        <form class="form">
+                            <label for="email">E-mail</label>
+                            <input type="text" id="email" name="email">
+                        </form>
+                        <form class="form">
+                            <label for="fpass">Пароль</label>
+                            <input type="text" id="fpass" name="fpass">
+                        </form>
+                        <form class="form">
+                            <label for="fspass">Повторите пароль</label>
+                            <input type="text" id="fspass" name="fspass">
+                        </form>
+                         <!--Костыль макета-->
+                        <button class="button__send" onclick="location.href='payments.html'">Зарегистрироваться</button>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <p class="title_info"> <a class="nav__link" href="about.html">Почитать о сервисе можно тут.</a></p>
+        </div>
+    </div>
+    <div class="footer" id="footer">
+        <div class="container">
+            <div class="footer__items">
+                <p class="text__footer">© 2022 Продвижение сайта - WEBAGENT </p>
+                <p class="text__footer">Разработка сайта -лучший разраб</p>
+                <p class="text__footer">Рейтинг Google: Google 6 из 5</p>
+            </div>
+        </div>
+    </div>
+
+</body>
