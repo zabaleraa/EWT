@@ -1,0 +1,400 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@zabaleraa 
+ksrvv
+/
+web
+Public
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+web/style.css
+@ksrvv
+ksrvv project files loaded
+Latest commit 8b14a8d 4 days ago
+ History
+ 1 contributor
+360 lines (326 sloc)  5.81 KB
+  
+body {
+    
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 20px;
+    margin: 0;
+    color: #000000;
+    background-color: #FFFFFF;
+}
+head{
+   margin: 0;
+}
+*, 
+*:before,
+*:after {
+   box-sizing: border-box;
+}
+.container{
+   width: 100%;
+   z-index: 100;
+   
+}
+.header{
+   
+    background-color: #3D67FF;
+}
+.header__info{
+     margin-top: 0px;
+     display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.header__info__afterenter{
+    margin-top: 0px;
+    display: flex;
+   align-items: center;
+   justify-content: left;
+}
+.paym__history{
+    margin-left: 10px;
+    margin-right: 40px;
+    font-size: 22px;
+    text-decoration: underline;
+}
+.paym__history_add{
+    margin-left: 10px;
+    margin-right: 40px;
+    font-size: 22px;
+    text-decoration: none;
+}
+.add_paym_add{
+    font-size: 22px;
+    text-decoration: underline;
+}
+.add_paym{
+    font-size: 22px;
+    text-decoration: none;
+}
+.app_name{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 35px; 
+}
+.decsr_name{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.main_text{
+    font-size: 28px;
+    text-align: center;
+}
+.reg__aut{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.reg__aut__item{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+
+}
+.title{
+    font-size: 26px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    
+}
+.container_form{
+    margin-top: 20px;
+    display: left;
+    align-items:center;
+    flex-direction: column;
+    height: auto;
+    width: 70%;
+}
+.form{
+   
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+
+
+input {
+    font-size: 16px;
+    width:110%;
+}
+input[type=text] {
+   
+    border-radius: 5px;
+    border: none;
+    border-bottom: 1px solid #C4C4C4;
+}
+input[type=text]:focus {
+  
+    border: 1px solid #C4C4C4;
+    width: 100%;
+ 
+    padding: 4px;
+}
+input[type="text" i]{
+    padding: 0px 0px;
+    width: 100%;
+   
+}
+.button__search{
+   
+    width: 150px;
+    height: 32px;
+}
+
+button {
+    position: relative;
+    background-color: #3D67FF;
+    border: none;
+    font-size: 18px;
+    color: #000000;
+    padding: 0px;
+    width: 210px;
+    height: 30px;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+button:hover {
+    opacity: 1;
+    border: none;
+    background-color: #6888ff;
+}
+button:after {
+    content: "";
+    background: #3D67FF;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s;
+    
+    border: none;
+    overflow: hidden;
+}
+
+button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s;
+    
+    border: none;
+    overflow: hidden;
+}
+.title_info{
+    font-size: 18px;
+    margin-top: 120px;
+    margin-bottom: 40px;
+    text-decoration: underline;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+}
+.nav__link{
+
+  
+   color: #000000;
+  
+  transition: opacity .1s linear;
+}
+.nav__link:hover{
+    opacity: .75;
+}
+
+.footer{
+    margin-top: 10px;
+}
+.footer__items{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+justify-content: space-between;
+ background-color: #3D67FF;
+ height: auto;
+ width: 100%;
+}
+.text__footer{
+    font-size: 20px; 
+    margin-top: 0px;
+    margin-bottom: 3px;
+}
+.text__footer:first-child{
+    margin-top: 10px;
+}
+.search{
+ 
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+
+}
+.search__item{
+   margin-left: 0px;
+   width: 70%;
+  
+}
+.left__item {
+    width: 30%;
+
+
+}
+.right__item{
+    margin-right: 0px;
+    margin-left: 20px;
+    }
+.search__text{
+   
+    margin-left: 0px;
+    font-size: 22px;
+    
+}
+.button__search{
+    margin-left: 30px;
+}
+.container__Search{
+    width:100%;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.container_navs{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.exit{
+    margin-right: 50px;
+}
+.container_hist{
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.history{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  margin-top: 50px;
+    width:80%;
+}
+/* внешние границы таблицы серого цвета толщиной 1px */
+table {
+    width: 100%;
+    border: 0px solid grey;
+    border-spacing: 0px 0px;
+   margin-bottom: 130px;
+ }
+ /* границы ячеек первого ряда таблицы */
+ th {  
+    background-color: #3D67FF;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 0;
+    
+ }
+ .name{
+    font-size: 22px;
+    color: #ffffff;
+    text-align: left;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: 300;
+ }
+ /* границы ячеек тела таблицы */
+ td {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 1px solid rgb(0, 0, 0);
+    padding-left: 30px;
+    text-align: left;
+ }
+ .t{
+     margin-top: 0px;
+     margin-bottom: 0px;
+     text-decoration: underline;
+ }
+ .notvisibleborders{
+    border: 0px solid rgb(0, 0, 0);
+ }
+ .fcontainer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+ }
+ .form_container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+
+ }
+ .paym_info{
+    font-size: 22px;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+ }
+ .container__paym_info{
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    
+    width: 50%;
+ }
+ .container__ab{
+    width: 60%;
+    background-color: #3D67FF;
+ }
+ .ab_t{
+    font-size: 22px;
+    text-align:center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+ }
+© 2022 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
